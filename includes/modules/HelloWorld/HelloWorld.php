@@ -27,8 +27,23 @@ class ALDC_HelloWorld extends ET_Builder_Module {
 		);
 	}
 
-	public function render( $attrs, $content = null, $render_slug ) {
-		return sprintf( '<h1>%1$s</h1>', $this->props['content'] );
+	public function render( $unprocessed_props, $content = null, $render_slug ) {
+		return sprintf(
+			'<h1 class="simp-simple-header-heading"></h1>
+			<div class="aldc_hello_world">%1$s</div>
+			<div class="splide">
+				<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">Slide 01</li>
+							<li class="splide__slide">Slide 02</li>
+							<li class="splide__slide">Slide 03</li>
+						</ul>
+				</div>
+			</div>	
+			',
+			$this->props['content']
+		);
+		// return sprintf( '<h1>%1$s</h1>', $this->props['content'] );
 	}
 }
 

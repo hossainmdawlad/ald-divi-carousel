@@ -1,0 +1,43 @@
+/*base styles for the document*/
+.splide__pagination {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  pointer-events: none;
+  bottom: -3rem;
+}
+.splide__pagination li {
+    display: inline-block;
+    line-height: 1;
+    list-style-type: none;
+    margin: 0;
+    pointer-events: auto;
+}
+.splide__pagination__page {
+  align-items: center;
+  background: #36403b;
+  border-radius: 0;
+  color: #b8cbc2;
+  display: inline-flex;
+  font-family: Splide Heading,sans-serif;
+  font-size: 1.1rem;
+  height: 2.2rem;
+  justify-content: center;
+  line-height: 1;
+  margin-left: 0.5rem;
+  width: 2.2rem;
+}
+.splide__pagination__page.is-active,.custom-prev,.custom-next {
+  background: #c0e900;
+  color: #19231f;
+  display: inline-flex;
+  font-family: Splide Heading,sans-serif;
+  font-size: 1.1rem;
+  height: 2.2rem;
+  justify-content: center;
+  line-height: 1;
+  margin-left: 0.5rem;
+  width: 2.2rem;
+}
